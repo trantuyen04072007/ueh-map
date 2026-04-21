@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a3753d7f4996d8f8959c8160d75162f2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a3753d7f4996d8f8959c8160d75162f2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a3753d7f4996d8f8959c8160d75162f2 = L.map(
+                "map_a3753d7f4996d8f8959c8160d75162f2",
+                {
+                    center: [10.7828, 106.6958],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 16,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_a3753d7f4996d8f8959c8160d75162f2);
+
+            
+
+        
+    
+            var tile_layer_c0e37f9919f4c287106d7ef37046b919 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c0e37f9919f4c287106d7ef37046b919.addTo(map_a3753d7f4996d8f8959c8160d75162f2);
+        
+    
+            var feature_group_efd759c45ee34f42adadb3993ac5a0f1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_630fbe9b715e8e4e18d89b3fc28c2cec = L.marker(
+                [10.7828, 106.6958],
+                {
+}
+            ).addTo(feature_group_efd759c45ee34f42adadb3993ac5a0f1);
+        
+    
+            var icon_dc732fdbce23a85b1f1e84e2c7b5993b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c4b208de18b24105687cf5b222ba70a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51256782a23f37909693746d3bd5d2bc = $(`<div id="html_51256782a23f37909693746d3bd5d2bc" style="width: 100.0%; height: 100.0%;"><b>UEH - Cơ sở A</b><br>Đại học Kinh tế TP.HCM</div>`)[0];
+                popup_4c4b208de18b24105687cf5b222ba70a.setContent(html_51256782a23f37909693746d3bd5d2bc);
+            
+        
+
+        marker_630fbe9b715e8e4e18d89b3fc28c2cec.bindPopup(popup_4c4b208de18b24105687cf5b222ba70a)
+        ;
+
+        
+    
+    
+            marker_630fbe9b715e8e4e18d89b3fc28c2cec.bindTooltip(
+                `<div>
+                     Click để xem chi tiết
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_630fbe9b715e8e4e18d89b3fc28c2cec.setIcon(icon_dc732fdbce23a85b1f1e84e2c7b5993b);
+            
+    
+            feature_group_efd759c45ee34f42adadb3993ac5a0f1.addTo(map_a3753d7f4996d8f8959c8160d75162f2);
+        
+    
+            var feature_group_38863fa160e9e165f0364d441c65276e = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var marker_b88d6f12662846307a9e89cbdaf0fd20 = L.marker(
+                [10.7835, 106.701],
+                {
+}
+            ).addTo(feature_group_38863fa160e9e165f0364d441c65276e);
+        
+    
+            var icon_c7947e7dfd5d4de6a697d8862d50acdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daab44459a583d582b55fec4e2d111de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fd0e74e019631138a6ce950efd272c0 = $(`<div id="html_9fd0e74e019631138a6ce950efd272c0" style="width: 100.0%; height: 100.0%;"><b>Bệnh viện Nhi Đồng 2</b><br>Bệnh viện chuyên khoa nhi tuyến đầu.</div>`)[0];
+                popup_daab44459a583d582b55fec4e2d111de.setContent(html_9fd0e74e019631138a6ce950efd272c0);
+            
+        
+
+        marker_b88d6f12662846307a9e89cbdaf0fd20.bindPopup(popup_daab44459a583d582b55fec4e2d111de)
+        ;
+
+        
+    
+    
+            marker_b88d6f12662846307a9e89cbdaf0fd20.bindTooltip(
+                `<div>
+                     Bệnh viện Nhi Đồng 2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b88d6f12662846307a9e89cbdaf0fd20.setIcon(icon_c7947e7dfd5d4de6a697d8862d50acdf);
+            
+    
+            var marker_d1907363214d0f018d68d1103938e3f1 = L.marker(
+                [10.7816, 106.6991],
+                {
+}
+            ).addTo(feature_group_38863fa160e9e165f0364d441c65276e);
+        
+    
+            var icon_9c2a96a0b5097b16a378fcbd8412c2f4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8cca330ec45222e85b7c5a4f2bb15bd2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_801129ed2c288bd4f41133f998870333 = $(`<div id="html_801129ed2c288bd4f41133f998870333" style="width: 100.0%; height: 100.0%;"><b>Diamond Plaza</b><br>Trung tâm thương mại và văn phòng.</div>`)[0];
+                popup_8cca330ec45222e85b7c5a4f2bb15bd2.setContent(html_801129ed2c288bd4f41133f998870333);
+            
+        
+
+        marker_d1907363214d0f018d68d1103938e3f1.bindPopup(popup_8cca330ec45222e85b7c5a4f2bb15bd2)
+        ;
+
+        
+    
+    
+            marker_d1907363214d0f018d68d1103938e3f1.bindTooltip(
+                `<div>
+                     Diamond Plaza
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1907363214d0f018d68d1103938e3f1.setIcon(icon_9c2a96a0b5097b16a378fcbd8412c2f4);
+            
+    
+            var marker_15bd14523c8d7ceeb00ff4a2bcae3d49 = L.marker(
+                [10.7797, 106.699],
+                {
+}
+            ).addTo(feature_group_38863fa160e9e165f0364d441c65276e);
+        
+    
+            var icon_a0cdfdc2d8ebff1e9a33bdb170f54c0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_593629624e37867c18ca4922b09e6428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1af7f587061caaa04d293cb38d39594a = $(`<div id="html_1af7f587061caaa04d293cb38d39594a" style="width: 100.0%; height: 100.0%;"><b>Nhà thờ Đức Bà</b><br>Địa điểm du lịch và tôn giáo nổi tiếng.</div>`)[0];
+                popup_593629624e37867c18ca4922b09e6428.setContent(html_1af7f587061caaa04d293cb38d39594a);
+            
+        
+
+        marker_15bd14523c8d7ceeb00ff4a2bcae3d49.bindPopup(popup_593629624e37867c18ca4922b09e6428)
+        ;
+
+        
+    
+    
+            marker_15bd14523c8d7ceeb00ff4a2bcae3d49.bindTooltip(
+                `<div>
+                     Nhà thờ Đức Bà
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15bd14523c8d7ceeb00ff4a2bcae3d49.setIcon(icon_a0cdfdc2d8ebff1e9a33bdb170f54c0e);
+            
+    
+            var marker_e0ea2c10829a3a662ee44755db9a09f2 = L.marker(
+                [10.7799, 106.7],
+                {
+}
+            ).addTo(feature_group_38863fa160e9e165f0364d441c65276e);
+        
+    
+            var icon_309aa6c998b7d8914d7a30c1c5502f75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11c98f4690ef0727d99807467f664b85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9007b78a6006400245efe66400618eb4 = $(`<div id="html_9007b78a6006400245efe66400618eb4" style="width: 100.0%; height: 100.0%;"><b>Bưu điện Trung tâm Thành phố</b><br>Cơ quan hành chính và điểm tham quan lịch sử.</div>`)[0];
+                popup_11c98f4690ef0727d99807467f664b85.setContent(html_9007b78a6006400245efe66400618eb4);
+            
+        
+
+        marker_e0ea2c10829a3a662ee44755db9a09f2.bindPopup(popup_11c98f4690ef0727d99807467f664b85)
+        ;
+
+        
+    
+    
+            marker_e0ea2c10829a3a662ee44755db9a09f2.bindTooltip(
+                `<div>
+                     Bưu điện Trung tâm Thành phố
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e0ea2c10829a3a662ee44755db9a09f2.setIcon(icon_309aa6c998b7d8914d7a30c1c5502f75);
+            
+    
+            var marker_ff7cba777991983a840da804c71b28be = L.marker(
+                [10.777, 106.6954],
+                {
+}
+            ).addTo(feature_group_38863fa160e9e165f0364d441c65276e);
+        
+    
+            var icon_76ded765c4afefadac1592238117cadb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_540ff81c880c4b1e8feedf797d0582cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc01c304567b5facfd64741d2ba1b52c = $(`<div id="html_bc01c304567b5facfd64741d2ba1b52c" style="width: 100.0%; height: 100.0%;"><b>Dinh Độc Lập</b><br>Di tích lịch sử quốc gia đặc biệt.</div>`)[0];
+                popup_540ff81c880c4b1e8feedf797d0582cb.setContent(html_bc01c304567b5facfd64741d2ba1b52c);
+            
+        
+
+        marker_ff7cba777991983a840da804c71b28be.bindPopup(popup_540ff81c880c4b1e8feedf797d0582cb)
+        ;
+
+        
+    
+    
+            marker_ff7cba777991983a840da804c71b28be.bindTooltip(
+                `<div>
+                     Dinh Độc Lập
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff7cba777991983a840da804c71b28be.setIcon(icon_76ded765c4afefadac1592238117cadb);
+            
+    
+            feature_group_38863fa160e9e165f0364d441c65276e.addTo(map_a3753d7f4996d8f8959c8160d75162f2);
+        
+    
+            var layer_control_6d6517268d77749140bd37be4f1ccc65_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_c0e37f9919f4c287106d7ef37046b919,
+                },
+                overlays :  {
+                    "Tr\u01b0\u1eddng \u0111\u1ea1i h\u1ecdc" : feature_group_efd759c45ee34f42adadb3993ac5a0f1,
+                    "\u0110\u1ecba \u0111i\u1ec3m c\u00f4ng c\u1ed9ng" : feature_group_38863fa160e9e165f0364d441c65276e,
+                },
+            };
+            let layer_control_6d6517268d77749140bd37be4f1ccc65 = L.control.layers(
+                layer_control_6d6517268d77749140bd37be4f1ccc65_layers.base_layers,
+                layer_control_6d6517268d77749140bd37be4f1ccc65_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_a3753d7f4996d8f8959c8160d75162f2);
+
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_a3753d7f4996d8f8959c8160d75162f2);
+        
+</script>
+</html>
